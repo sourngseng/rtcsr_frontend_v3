@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +15,18 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+//for switching language route
+Route::get('/lang/{locale}', function ($locale) {
+	Session::put('locale', $locale);
+	return redirect()->back();
+});
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('page/about', [HomeController::class, 'about'])->name('about');
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/courses', [HomeController::class, 'courses'])->name('courses');
+Route::get('/courses-detail', [HomeController::class, 'courses_detail'])->name('courses-detail');
 Route::get('/event', [HomeController::class, 'event'])->name('event');
 Route::get('page/teacher', [HomeController::class, 'teacher'])->name('teacher');
 Route::get('page/gallery', [HomeController::class, 'gallery'])->name('gallery');

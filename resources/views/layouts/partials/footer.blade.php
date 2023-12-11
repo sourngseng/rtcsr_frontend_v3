@@ -1,7 +1,7 @@
 <!--====== Footer Start ======-->
 
 <section class="footer-area bg_cover"
-    style="margin-top: 10px; background-image: url(https://template.hasthemes.com/edumate-v1/edumate/assets/images/counter-bg.webp);">
+    style="margin-top: 10px; background-image: url({{ asset('frontend') }}/assets/images/counter-bg.webp);">
     <div class="footer-widget">
         <div class="container">
             <div class="row">

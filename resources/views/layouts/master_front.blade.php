@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="{{ app()->getlocale() }}">
 
 <head>
     <meta charset="utf-8">
@@ -21,8 +21,13 @@
             font-family: 'Hanuman', serif;
         }
 
-        .text-primary {
+        .text-primary,
+        .features-title,
+        .title,
+        .campus-title,
+        .video-title {
             font-family: 'Hanuman', serif !important;
+            line-height: 64px;
         }
 
         .main-btn {
@@ -45,6 +50,15 @@
 
         .header-logo {
             height: 96px;
+        }
+
+        .rounded-full {
+            height: 24px;
+            font-family: 'Hanuman', serif !important;
+        }
+
+        a {
+            font-family: 'Hanuman', serif !important;
         }
     </style>
     @stack('styles')
