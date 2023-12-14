@@ -23,9 +23,9 @@
                     style="background-image: url({{asset('rpitssr')}}/assets/images/features-bg.webp);">
                 </div>
                 <div class="features-mask-content">
-                    <p>20 Courses</p>
-                    <p>Expert Teachers</p>
-                    <p>Online Education</p>
+                    <p>២០ ជំនាញ</p>
+                    <p>គ្រូមានបទពិសោធន៍</p>
+                    <p>ជំនាញពិតជីវិតប្រសើរ</p>
                 </div>
             </div>
         </div>
