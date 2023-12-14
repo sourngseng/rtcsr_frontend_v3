@@ -30,27 +30,49 @@ class HomeController extends Controller
     }
     public function blog()
     {
-        return view('pages.blog.index_blog');
+        $this->domain =env('APP_URL_API');
+        $data['slides']=Http::get($this->domain .'/sliders')->json();
+        $data['blogs']=Http::get($this->domain .'/blogs')->json();
+        // dd($data['blogs']);
+        return view('pages.blog.index_blog',$data);
+    }
+    public function blog_details($slug)
+    {
+        $this->domain =env('APP_URL_API');
+        $data['slides']=Http::get($this->domain .'/sliders')->json();
+        $data['blog_detail']=Http::get($this->domain .'/blog-details/'.$slug)->json();
+        // dd($data['blog_detail']);
+        return view('pages.blog.blog_detail',$data);
     }
     public function contact()
     {
+        $this->domain =env('APP_URL_API');
         return view('pages.contact.index_contact');
     }
     public function courses()
     {
+        $this->domain =env('APP_URL_API');
+        // $response=Http::get($this->domain .'/sliders');
+        $courses=Http::get($this->domain .'/courses');
+        $data['courses']=$courses->json();        
         // return view('pages.course.index_courses');
-        return view('pages.course.our-courses-list');
+        return view('pages.course.our-courses-list',$data);
     }
     public function courses_detail(){
-        return view('pages.course.courses-details');
+        $this->domain =env('APP_URL_API');
+        $courses=Http::get($this->domain .'/courses');
+        $data['courses']=$courses->json();
+        return view('pages.course.courses-details',$data);
 
     }
     public function event()
     {
+        $this->domain =env('APP_URL_API');
         return view('pages.event.index_event');
     }
     public function teacher()
     {
+        $this->domain =env('APP_URL_API');
         $response=Http::get('https://apps.rpitssr.edu.kh/api/front-teachers');
         $data['teachers']=$response->json();
 //        dd($data['teachers']);
@@ -58,14 +80,17 @@ class HomeController extends Controller
     }
     public function gallery()
     {
+        $this->domain =env('APP_URL_API');
         return view('pages.gallery.index_gallery');
     }
     public function login()
     {
+        $this->domain =env('APP_URL_API');
         return view('pages.login.index_login');
     }
     public function register()
     {
+        $this->domain =env('APP_URL_API');
         return view('pages.register.index_register');
     }
     public function notice()

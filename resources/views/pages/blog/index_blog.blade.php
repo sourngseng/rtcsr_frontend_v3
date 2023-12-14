@@ -7,8 +7,7 @@
 <!--====== Page Banner Start ======-->
 
 <section class="page-banner">
-    <div class="page-banner-bg bg_cover"
-        style="background-image: url(https://template.hasthemes.com/edumate-v1/edumate/assets/images/page-banner.webp);">
+    <div class="page-banner-bg bg_cover" style="background-image: url({{ asset('images/page_banner.webp') }});">
         <div class="container">
             <div class="banner-content text-center">
                 <h2 class="title">Blog</h2>
@@ -26,132 +25,30 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="row">
+                    @foreach($blogs['data'] as $blog )
                     <div class="col-md-6">
                         <div class="single-blog mt-30">
                             <div class="blog-image">
-                                <a href="blog-details.html">
-                                    <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-1.webp"
-                                        width="370" height="250" alt="blog">
+                                <a href="{{ route('blog-details',$blog['slug'])
+                            }}">
+                                    <img src="{{ $blog['image']}}" width="370" height="250" alt="{{ $blog['image']}}">
                                 </a>
                             </div>
                             <div class="blog-content">
                                 <ul class="meta">
-                                    <li><a href="#">25 May, 2020</a></li>
-                                    <li><a href="#">By: Alex</a></li>
-                                    <li><a href="#">12 Comments</a></li>
+                                    <li><a href="#">{{ date('d-m-Y', strtotime($blog['created_at'])) }}</a></li>
+                                    <li><a href="#">By: RPITSSR</a></li>
+                                    {{-- <li><a href="#">12 Comments</a></li> --}}
                                 </ul>
-                                <h4 class="blog-title"><a href="blog-details.html">Latest Micro Biological basic
-                                        Workshop for Research</a></h4>
-                                <a href="blog-details.html" class="more">Read more <i
-                                        class="fal fa-chevron-right"></i></a>
+                                <h4 class="blog-title"><a href="{{ route('blog-details',$blog['slug'])
+                                }}">{{$blog['title']}}</a></h4>
+                                <a href="{{ route('blog-details',$blog['slug'])
+                            }}" class="more">Read more <i class="fal fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="single-blog mt-30">
-                            <div class="blog-image">
-                                <a href="blog-details.html">
-                                    <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-2.webp"
-                                        width="370" height="250" alt="blog">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="meta">
-                                    <li><a href="#">25 May, 2020</a></li>
-                                    <li><a href="#">By: Alex</a></li>
-                                    <li><a href="#">12 Comments</a></li>
-                                </ul>
-                                <h4 class="blog-title"><a href="blog-details.html">Post Graduate Certification giving
-                                        Program 2020</a></h4>
-                                <a href="blog-details.html" class="more">Read more <i
-                                        class="fal fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="single-blog mt-30">
-                            <div class="blog-image">
-                                <a href="blog-details.html">
-                                    <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-4.webp"
-                                        width="370" height="250" alt="blog">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="meta">
-                                    <li><a href="#">25 May, 2020</a></li>
-                                    <li><a href="#">By: Alex</a></li>
-                                    <li><a href="#">12 Comments</a></li>
-                                </ul>
-                                <h4 class="blog-title"><a href="blog-details.html">Advantage of Laravel in you
-                                        Programming language</a></h4>
-                                <a href="blog-details.html" class="more">Read more <i
-                                        class="fal fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="single-blog mt-30">
-                            <div class="blog-image">
-                                <a href="blog-details.html">
-                                    <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-5.webp"
-                                        width="370" height="250" alt="blog">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="meta">
-                                    <li><a href="#">25 May, 2020</a></li>
-                                    <li><a href="#">By: Alex</a></li>
-                                    <li><a href="#">12 Comments</a></li>
-                                </ul>
-                                <h4 class="blog-title"><a href="blog-details.html">Resources for PHP Developer and UX
-                                        Designer</a></h4>
-                                <a href="blog-details.html" class="more">Read more <i
-                                        class="fal fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="single-blog mt-30">
-                            <div class="blog-image">
-                                <a href="blog-details.html">
-                                    <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-7.webp"
-                                        width="370" height="250" alt="blog">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="meta">
-                                    <li><a href="#">25 May, 2020</a></li>
-                                    <li><a href="#">By: Alex</a></li>
-                                    <li><a href="#">12 Comments</a></li>
-                                </ul>
-                                <h4 class="blog-title"><a href="blog-details.html">Workshop on Presentation of your
-                                        Project</a></h4>
-                                <a href="blog-details.html" class="more">Read more <i
-                                        class="fal fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="single-blog mt-30">
-                            <div class="blog-image">
-                                <a href="blog-details.html">
-                                    <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-8.webp"
-                                        width="370" height="250" alt="blog">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <ul class="meta">
-                                    <li><a href="#">25 May, 2020</a></li>
-                                    <li><a href="#">By: Alex</a></li>
-                                    <li><a href="#">12 Comments</a></li>
-                                </ul>
-                                <h4 class="blog-title"><a href="blog-details.html">Cultural Program Festival for all new
-                                        Students</a></h4>
-                                <a href="blog-details.html" class="more">Read more <i
-                                        class="fal fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
                 <ul class="pagination-items text-center">
                     <li><a class="active" href="#">01</a></li>
@@ -310,36 +207,4 @@
 
 <!--====== Blog Ends ======-->
 
-{{--
-<!--====== Newsletter Start ======-->--}}
-
-{{--<section class="newsletter-area-2">--}}
-    {{-- <div class="container">--}}
-        {{-- <div class="newsletter-wrapper bg_cover"
-            style="background-image: url(https://template.hasthemes.com/edumate-v1/edumate/assets/images/newsletter-bg-1.webp);">
-            --}}
-            {{-- <div class="row align-items-center">--}}
-                {{-- <div class="col-lg-5">--}}
-                    {{-- <div class="section-title-2 mt-25">--}}
-                        {{-- <h2 class="title">Subscribe our Newsletter</h2>--}}
-                        {{-- <span class="line"></span>--}}
-                        {{-- <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need some</p>
-                        --}}
-                        {{-- </div>--}}
-                    {{-- </div>--}}
-                {{-- <div class="col-lg-7">--}}
-                    {{-- <div class="newsletter-form mt-30">--}}
-                        {{-- <form action="#">--}}
-                            {{-- <input type="text" placeholder="Enter your email here">--}}
-                            {{-- <button class="main-btn main-btn-2">Subscribe now</button>--}}
-                            {{-- </form>--}}
-                        {{-- </div>--}}
-                    {{-- </div>--}}
-                {{-- </div>--}}
-            {{-- </div>--}}
-        {{-- </div>--}}
-    {{--</section>--}}
-
-{{--
-<!--====== Newsletter Ends ======-->--}}
 @endsection

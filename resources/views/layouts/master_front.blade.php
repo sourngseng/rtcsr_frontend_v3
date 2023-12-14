@@ -49,7 +49,16 @@
         }
 
         .header-logo {
-            height: 96px;
+            height: 64px;
+            /* padding: 18px 0px !important; */
+        }
+
+        /* .header-top-wrapper {
+            height: 24px !important;
+        } */
+
+        .header-top {
+            /* height: 54px; */
         }
 
         .rounded-full {
@@ -59,6 +68,61 @@
 
         a {
             font-family: 'Hanuman', serif !important;
+        }
+
+        .navigation.sticky {
+            /* height: 64px !important; */
+        }
+
+
+
+        /* li {
+            height: 64px !important;
+        } */
+
+        .navigation .nav-menus-wrapper .nav-menu li a {
+            padding: 18px 0px !important;
+            /* padding-bottom: 10px !important; */
+        }
+
+        .navigation .nav-menus-wrapper .nav-menu li .nav-submenu li {
+            height: 36px !important;
+            padding: 2px 15px !important;
+
+        }
+
+        .nav-menu {
+            padding-left: 20px !important;
+        }
+
+        .slider-area,
+        .top-courses-area,
+        .event-page {
+            padding-top: 10px !important;
+        }
+
+        .page-banner {
+            padding-top: 10px !important;
+        }
+
+        .blog-page {
+            padding-top: 10px !important;
+        }
+
+        .features-area {
+            padding-top: 20px !important;
+        }
+
+        .blog-area,
+        .event-area,
+        .single-courses,
+        .testimonials-area {
+            padding-top: 20px !important;
+
+        }
+
+        .newsletter-form input {
+            padding: 0 20px !important;
         }
     </style>
     @stack('styles')

@@ -24,6 +24,8 @@ Route::get('/lang/{locale}', function ($locale) {
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('page/about', [HomeController::class, 'about'])->name('about');
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
+Route::get('/blog-details/{slug}', [HomeController::class, 'blog_details'])->name('blog-details');
+
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/courses', [HomeController::class, 'courses'])->name('courses');
 Route::get('/courses-detail', [HomeController::class, 'courses_detail'])->name('courses-detail');

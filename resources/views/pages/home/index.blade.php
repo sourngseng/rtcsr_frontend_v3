@@ -249,39 +249,39 @@ Welcome to RPITSSR
         <div class="row no-gutters wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="col-sm-4">
                 <div class="single-specialty mt-30">
-                    <div class="specialty-box">
+                    <div class="specialty-box single-courses">
                         <div class="box-icon">
                             <img src="{{asset('frontend')}}/assets/images/icon/icon-1.webp" width="70" height="70"
                                 alt="icon">
                         </div>
                         <div class="box-content">
-                            <p>Skill Based Scholarships</p>
+                            <p>ជ្រើសរើសជំនាញ អ្នកចូលចិត្ត</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="single-specialty active mt-30">
-                    <div class="specialty-box">
+                    <div class="specialty-box single-courses">
                         <div class="box-icon">
                             <img src="{{asset('frontend')}}/assets/images/icon/icon-2.webp" width="70" height="70"
                                 alt="icon">
                         </div>
                         <div class="box-content">
-                            <p>Download Prospectus</p>
+                            <p>ទទួលការបណ្តុះបណ្តាល</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="single-specialty mt-30">
-                    <div class="specialty-box">
+                    <div class="specialty-box single-courses">
                         <div class="box-icon">
                             <img src="{{asset('frontend')}}/assets/images/icon/icon-3.webp" width="70" height="70"
                                 alt="icon">
                         </div>
                         <div class="box-content">
-                            <p>After Course Certification</p>
+                            <p>ទទួលលិខិតបញ្ជាក់ ឬសញ្ញាបត្រ</p>
                         </div>
                     </div>
                 </div>
@@ -295,7 +295,7 @@ Welcome to RPITSSR
 <!--====== Campus Visit Start ======-->
 
 <section class="campus-visit-area">
-    <div class="container">
+    <div class="container single-courses">
         <div class="campus-visit-wrapper">
             <div class="campus-image-col">
                 <div class="campus-image">
@@ -328,380 +328,31 @@ Welcome to RPITSSR
 
 <!--====== Event Start ======-->
 
-<section class="event-area">
-    <div class="container">
-        <div class="event-title-tab-menu">
-            <div class="event-title mt-40">
-                <h2 class="title">Up Coming <br> Events</h2>
-            </div>
-
-            <div class="event-tab-menu mt-40">
-                <ul class="nav">
-                    <li><a class="active" data-bs-toggle="tab" href="#courses">Courses</a></li>
-                    <li><a data-bs-toggle="tab" href="#admission">Admission</a></li>
-                    <li><a data-bs-toggle="tab" href="#training">Training</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-content event-tab-items wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
-            <div class="tab-pane fade show active" id="courses">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="admission">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="training">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-event text-center mt-30">
-                            <span class="time">10.35 am to 1.00 pm</span>
-                            <span class="date">25 May, 2020</span>
-                            <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                            <p class="place">Place: Central Hall, New York</p>
-                            <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="view-btn text-center">
-                <a href="#" class="view-more">View More <i class="fal fa-chevron-right"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
+{{-- @include('pages.event.events') --}}
 
 <!--====== Event Ends ======-->
 
 <!--====== Testimonials Start ======-->
 
-<section class="testimonials-area">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-4">
-                <div class="testimonials-title">
-                    <h2 class="title">Our Students Review</h2>
-                    <span class="line"></span>
-                    <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need desire to obtain
-                        pain of itself, because it is pain de sires to obtain pain of itself occur</p>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="testimonials-wrapper">
-                    <div class="testimonials-shape shape-1"></div>
-                    <div class="testimonials-shape shape-2"></div>
-                    <div class="testimonials-shape shape-3"></div>
-
-                    <div class="row no-gutters">
-                        <div class="col-lg-6 col-md-5">
-                            <div class="testimonials-image">
-                                <div class="single-testimonial-image">
-                                    <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/testimonials-1.webp"
-                                        width="313" height="579" alt="testimonials">
-                                </div>
-                                <div class="single-testimonial-image">
-                                    <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/testimonials-2.webp"
-                                        width="313" height="579" alt="testimonials">
-                                </div>
-                                <div class="single-testimonial-image">
-                                    <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/testimonials-3.webp"
-                                        width="313" height="579" alt="testimonials">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-7">
-                            <div class="testimonials-content">
-                                <div class="single-testimonial-content">
-                                    <div class="content-text">
-                                        <i class="fas fa-quote-right"></i>
-                                        <p>Best pleasure rationally encounter consequences that are very nice a again is
-                                            there anyone who loves or desires to obtain pain of itself</p>
-                                    </div>
-                                    <div class="content-meta">
-                                        <p class="name">Alex Smith</p>
-                                        <p class="designation">CEO, Xelopex Group</p>
-                                    </div>
-                                </div>
-                                <div class="single-testimonial-content">
-                                    <div class="content-text">
-                                        <i class="fas fa-quote-right"></i>
-                                        <p>Best pleasure rationally encounter consequences that are very nice a again is
-                                            there anyone who loves or desires to obtain pain of itself</p>
-                                    </div>
-                                    <div class="content-meta">
-                                        <p class="name">Alex Smith</p>
-                                        <p class="designation">CEO, Xelopex Group</p>
-                                    </div>
-                                </div>
-                                <div class="single-testimonial-content">
-                                    <div class="content-text">
-                                        <i class="fas fa-quote-right"></i>
-                                        <p>Best pleasure rationally encounter consequences that are very nice a again is
-                                            there anyone who loves or desires to obtain pain of itself</p>
-                                    </div>
-                                    <div class="content-meta">
-                                        <p class="name">Alex Smith</p>
-                                        <p class="designation">CEO, Xelopex Group</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@include('pages.testimonial.testimonial')
 
 <!--====== Testimonials Ends ======-->
 
 <!--====== Counter Start ======-->
 
-<div class="counter-area">
-    <div class="container">
-        <div class="counter-wrapper bg_cover"
-            style="background-image: url({{asset('frontend')}}/assets/images/counter-bg.webp);">
-            <div class="row">
-                <div class="col-sm-3 col-6 counter-col">
-                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <span class="counter-count"><span class="count" data-count="3652">0</span> +</span>
-                        <p>Students</p>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-6 counter-col">
-                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <span class="counter-count"><span class="count" data-count="105">0</span> +</span>
-                        <p>Faculties</p>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-6 counter-col">
-                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.6s">
-                        <span class="counter-count"><span class="count" data-count="120">0</span> +</span>
-                        <p>Branches</p>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-6 counter-col">
-                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.8s">
-                        <span class="counter-count"><span class="count" data-count="30">0</span> +</span>
-                        <p>Awards win</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@include('pages.home.counter')
 
 <!--====== Counter Ends ======-->
 
 <!--====== Blog Start ======-->
 
-<section class="blog-area">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-9">
-                <div class="section-title-2 text-center">
-                    <h2 class="title">Latest Blog Post</h2>
-                    <span class="line"></span>
-                    <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need some</p>
-                </div>
-            </div>
-        </div>
-        <div class="blog-wrapper">
-            <div class="row-wrapper blog-active">
-                <div class="custom-col">
-                    <div class="single-blog mt-30">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-1.webp"
-                                    width="370" height="250" alt="blog">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <ul class="meta">
-                                <li><a href="#">25 May, 2020</a></li>
-                                <li><a href="#">By: Alex</a></li>
-                                <li><a href="#">12 Comments</a></li>
-                            </ul>
-                            <h4 class="blog-title"><a href="blog-details.html">Latest Micro Biological basic Workshop
-                                    for Research</a></h4>
-                            <a href="blog-details.html" class="more">Read more <i class="fal fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="custom-col">
-                    <div class="single-blog mt-30">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-2.webp"
-                                    width="370" height="250" alt="blog">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <ul class="meta">
-                                <li><a href="#">25 May, 2020</a></li>
-                                <li><a href="#">By: Alex</a></li>
-                                <li><a href="#">12 Comments</a></li>
-                            </ul>
-                            <h4 class="blog-title"><a href="blog-details.html">Latest Micro Biological basic Workshop
-                                    for Research</a></h4>
-                            <a href="blog-details.html" class="more">Read more <i class="fal fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="custom-col">
-                    <div class="single-blog mt-30">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-3.webp"
-                                    width="370" height="250" alt="blog">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <ul class="meta">
-                                <li><a href="#">25 May, 2020</a></li>
-                                <li><a href="#">By: Alex</a></li>
-                                <li><a href="#">12 Comments</a></li>
-                            </ul>
-                            <h4 class="blog-title"><a href="blog-details.html">Latest Micro Biological basic Workshop
-                                    for Research</a></h4>
-                            <a href="blog-details.html" class="more">Read more <i class="fal fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@include('pages.home.blogs')
 
 <!--====== Blog Ends ======-->
 
 <!--====== Newsletter Start ======-->
 
-<section class="newsletter-area">
-    <div class="container">
-        <div class="newsletter-wrapper bg_cover wow zoomIn" data-wow-duration="1s" data-wow-delay="0.2s"
-            style="background-image: url({{asset('frontend')}}/assets/images/newsletter-bg-1.webp);">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="section-title-2 mt-25">
-                        <h2 class="title">Subscribe our Newsletter</h2>
-                        <span class="line"></span>
-                        <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need some</p>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="newsletter-form mt-30">
-                        <form action="#">
-                            <input type="text" placeholder="Enter your email here">
-                            <button class="main-btn main-btn-2">Subscribe now</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@include('pages.home.newsletter')
 
 <!--====== Newsletter Ends ======-->
 
