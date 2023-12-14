@@ -3,74 +3,36 @@
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-9">
                 <div class="section-title-2 text-center">
-                    <h2 class="title">Latest Blog Post</h2>
+                    <h2 class="title">ពត៌មានថ្មីៗចុងក្រោយ</h2>
                     <span class="line"></span>
-                    <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need some</p>
+                    <p>ខាងក្រោមនេះជាពត៌មានថ្មីៗសំខាន់ៗយ៉ាងតិចចំនួន៣ ដែលបានចុះផ្សាយ។</p>
                 </div>
             </div>
         </div>
         <div class="blog-wrapper">
             <div class="row-wrapper blog-active">
+                @foreach($blogs['data'] as $blog )
                 <div class="custom-col">
                     <div class="single-blog mt-30">
                         <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-1.webp"
-                                    width="370" height="250" alt="blog">
+                            <a href="{{ route('blog-details',$blog['slug'])}}">
+                                <img src="{{ $blog['image']}}" width="370" height="250" alt="blog">
                             </a>
                         </div>
                         <div class="blog-content">
                             <ul class="meta">
-                                <li><a href="#">25 May, 2020</a></li>
-                                <li><a href="#">By: Alex</a></li>
-                                <li><a href="#">12 Comments</a></li>
+                                <li><a href="#">{{ date('d-m-Y', strtotime($blog['created_at'])) }}</a></li>
+                                <li><a href="#">By: RTCSR</a></li>
+
                             </ul>
-                            <h4 class="blog-title"><a href="blog-details.html">Latest Micro Biological basic Workshop
-                                    for Research</a></h4>
-                            <a href="blog-details.html" class="more">Read more <i class="fal fa-chevron-right"></i></a>
+                            <h4 class="blog-title"><a
+                                    href="{{ route('blog-details',$blog['slug'])}}">{{$blog['title']}}</a></h4>
+                            <a href="{{ route('blog-details',$blog['slug'])}}" class="more">Read more <i
+                                    class="fal fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="custom-col">
-                    <div class="single-blog mt-30">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-2.webp"
-                                    width="370" height="250" alt="blog">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <ul class="meta">
-                                <li><a href="#">25 May, 2020</a></li>
-                                <li><a href="#">By: Alex</a></li>
-                                <li><a href="#">12 Comments</a></li>
-                            </ul>
-                            <h4 class="blog-title"><a href="blog-details.html">Latest Micro Biological basic Workshop
-                                    for Research</a></h4>
-                            <a href="blog-details.html" class="more">Read more <i class="fal fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="custom-col">
-                    <div class="single-blog mt-30">
-                        <div class="blog-image">
-                            <a href="blog-details.html">
-                                <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/blog-3.webp"
-                                    width="370" height="250" alt="blog">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <ul class="meta">
-                                <li><a href="#">25 May, 2020</a></li>
-                                <li><a href="#">By: Alex</a></li>
-                                <li><a href="#">12 Comments</a></li>
-                            </ul>
-                            <h4 class="blog-title"><a href="blog-details.html">Latest Micro Biological basic Workshop
-                                    for Research</a></h4>
-                            <a href="blog-details.html" class="more">Read more <i class="fal fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

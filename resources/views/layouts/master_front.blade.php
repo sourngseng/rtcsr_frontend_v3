@@ -25,7 +25,8 @@
         .features-title,
         .title,
         .campus-title,
-        .video-title {
+        .video-title,
+        .footer-title {
             font-family: 'Hanuman', serif !important;
             line-height: 64px;
         }
@@ -116,7 +117,8 @@
         .blog-area,
         .event-area,
         .single-courses,
-        .testimonials-area {
+        .testimonials-area,
+        .blog-details-page {
             padding-top: 20px !important;
 
         }

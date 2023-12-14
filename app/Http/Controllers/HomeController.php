@@ -17,6 +17,7 @@ class HomeController extends Controller
         $galleries=Http::get($this->domain .'/galleries');
         $data['galleries']=$galleries->json();
         $data['slides']=$response->json();
+        $data['blogs']=Http::get($this->domain .'/blogs')->json();
 //         dd($data['slides']);
         return view('pages.home.index',$data);
     }

@@ -7,54 +7,54 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-link mt-45">
-                        <h4 class="footer-title">Our Campus</h4>
+                        <h4 class="footer-title">អំពីវិទ្យាស្ថាន</h4>
                         <ul class="link-list">
-                            <li><a href="/page/about">About us</a></li>
-                            <li><a href="#">Campus map</a></li>
-                            <li><a href="#">360O view</a></li>
-                            <li><a href="#">Notice board</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/page/about">អំពីវិទ្យាស្ថាន</a></li>
+                            <li><a href="#">ផែនទីវិទ្យាស្ថាន</a></li>
+                            <li><a href="#">បណ្តាញសង្គម</a></li>
+                            <li><a href="#">កំណត់ចំណាំផ្សេងៗ</a></li>
+                            <li><a href="/contact">ទំនាក់ទំនង</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-link mt-45">
-                        <h4 class="footer-title">Information</h4>
+                        <h4 class="footer-title">ពត៌មានផ្សេងៗ</h4>
                         <ul class="link-list">
-                            <li><a href="#">Admission</a></li>
-                            <li><a href="#">Tuition fee</a></li>
-                            <li><a href="#">Scholorship</a></li>
-                            <li><a href="#">Coditions</a></li>
-                            <li><a href="#">Facilities</a></li>
+                            <li><a href="#">ការចុះឈ្មោះ</a></li>
+                            <li><a href="#">តម្លៃបណ្តុះបណ្តាល</a></li>
+                            <li><a href="#">អាហារូបករណ៍</a></li>
+                            <li><a href="#">លក្ខខ័ណ្ឌចូលរៀន</a></li>
+                            <li><a href="#">សម្ភារៈបណ្តុះបណ្តាល</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-link mt-45">
-                        <h4 class="footer-title">Useful Link</h4>
+                        <h4 class="footer-title">លីងមានប្រយោជន៍</h4>
                         <ul class="link-list">
-                            <li><a href="#">All Courses</a></li>
-                            <li><a href="/page/teacher">Our Teachers</a></li>
-                            <li><a href="#">Our Events</a></li>
-                            <li><a href="#">Blog post</a></li>
+                            <li><a href="#">ជំនាញ ឬឯកទេស</a></li>
+                            <li><a href="/page/teacher">គ្រូបណ្តុះបណ្តាល</a></li>
+                            <li><a href="#">ព្រឹត្តិការណ៍</a></li>
+                            <li><a href="#">ពត៌មានផ្សព្វផ្សាយ</a></li>
                             <li><a href="#">FAQs</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-link mt-45">
-                        <h4 class="footer-title">Contact Info</h4>
+                        <h4 class="footer-title">ទំនាក់ទំនងពត៌មាន</h4>
                         <ul class="link-list">
                             <li>
-                                <p>245, New Town, Marklen Street North City, New York, USA</p>
+                                <p>ភូមិបន្ទាយចាស់ សង្កាត់ស្លក្រាម ក្រុងសៀមរាប ខេត្តសៀមរាប</p>
                             </li>
                             <li>
-                                <p><a href="tel:+01254659874">+01254 659 874 </a></p>
-                                <p><a href="tel:+32145857458">+32145 857 458</a></p>
+                                <p><a href="tel:+85563766291">+855 63 766 291 </a></p>
+                                <p><a href="tel:+85570788990">+855 70 788 990</a></p>
                             </li>
                             <li>
-                                <p><a href="mailto://info@example.com">info@example.com</a></p>
-                                <p><a href="#">www.example.com</a></p>
+                                <p><a href="mailto://info@rpitssr.edu.kh">info@rpitssr.edu.kh</a></p>
+                                <p><a href="#">www.rpitssr.edu.kh</a></p>
                             </li>
                         </ul>
                     </div>
