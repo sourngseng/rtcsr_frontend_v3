@@ -6,27 +6,36 @@
                 <div class="header-top-left">
                     <ul class="header-meta">
                         <li>
-                            <a href="mailto://info@rpitssr.edu.kh"><i class="fa fa-envelope"></i>
-                                info@rpitssr.edu.kh</a>
+                            <a href="mailto://info@rpitssr.edu.kh">
+                                <h6 class="text-white"><i class="fa fa-envelope"></i>
+                                    info@rpitssr.edu.kh</h6>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="header-top-right">
                     <div class="header-link">
                         {{-- <a class="notice active" href="/notice">Notice</a> --}}
-                        <a class="login" href="#"><i class="fa fa-phone"></i> 093771244</a>
-                        <a class="register" href="#"><i class="fa fa-phone"></i> 092771244</a>
+                        <a class="login" href="#">
+                            <h6 class="text-white"><i class="fa fa-phone"></i> +85570 788 990</h6>
+                        </a>
+                        <a class="register" href="#">
+                            <h6 class="text-white"><i class="fa fa-phone"></i> +85563 766 291</h6>
+                        </a>
                         <?php  $flag = app()->getlocale(); ?>
                         @if ($flag == 'kh')
                         <a href="{{url('/lang/en')}}"
                             class="inline-flex items-center font-bold justify-center px-4 text-white">
                             <img class="w-8 h-8 rounded-full ring-1 ring-gray-400 mr-3"
-                                src="{{asset('images/flags/en.png')}}" alt="Change Language"> EN</a>
+                                src="{{asset('images/flags/en.png')}}" alt="Change Language">
+
+                        </a>
                         @else
                         <a href="{{url('/lang/kh')}}"
                             class="inline-flex items-center font-bold justify-center px-4 text-white">
-                            <img class="w-8 h-8 rounded-full ring-1 ring-gray-400 mr-3"
-                                src="{{asset('images/flags/kh.png')}}" alt="Change Language"> ខ្មែរ</a>
+                            <img class="w-8 h-8 rounded-full  ring-1 ring-gray-400 mr-3"
+                                src="{{asset('images/flags/kh.png')}}" alt="Change Language">
+                        </a>
                         @endif
                     </div>
                 </div>
@@ -36,7 +45,9 @@
         </div>
     </div>
 
-    <div id="navigation" class="navigation navigation-landscape">
+    @include('layouts.partials.navigation')
+
+    {{-- <div id="navigation" class="navigation navigation-landscape">
         <div class="container position-relative">
             <div class="row align-items-center">
                 <div class="col-lg-2">
@@ -114,6 +125,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
+
 </header>
 <!--====== Header Ends ======-->

@@ -33,7 +33,7 @@ Welcome to RPITSSR
                     <div class="specialty-box single-courses">
                         <div class="box-icon">
                             <img src="{{asset('frontend')}}/assets/images/icon/icon-1.webp" width="70" height="70"
-                                alt="icon">
+                                alt="icon" onerror="onErrorImage(event)">
                         </div>
                         <div class="box-content">
                             <p>ជ្រើសរើសជំនាញ អ្នកចូលចិត្ត</p>
@@ -46,7 +46,7 @@ Welcome to RPITSSR
                     <div class="specialty-box single-courses">
                         <div class="box-icon">
                             <img src="{{asset('frontend')}}/assets/images/icon/icon-2.webp" width="70" height="70"
-                                alt="icon">
+                                alt="icon" onerror="onErrorImage(event)">
                         </div>
                         <div class="box-content">
                             <p>ទទួលការបណ្តុះបណ្តាល</p>
@@ -59,7 +59,7 @@ Welcome to RPITSSR
                     <div class="specialty-box single-courses">
                         <div class="box-icon">
                             <img src="{{asset('frontend')}}/assets/images/icon/icon-3.webp" width="70" height="70"
-                                alt="icon">
+                                alt="icon" onerror="onErrorImage(event)">
                         </div>
                         <div class="box-content">
                             <p>ទទួលលិខិតបញ្ជាក់ ឬសញ្ញាបត្រ</p>
@@ -82,7 +82,8 @@ Welcome to RPITSSR
                 <div class="campus-image">
                     @foreach ($galleries['data'] as $item)
                     <div class=" single-campus">
-                        <img src="{{ $item['image'] }}" width="521" height="392" alt="Campus">
+                        <img src="{{ $item['image'] }}" width="521" height="392" alt="Campus"
+                            onerror="onErrorImage(event)">
                     </div>
                     @endforeach
                     {{-- <div class="single-campus">

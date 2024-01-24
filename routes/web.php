@@ -38,4 +38,4 @@ Route::get('/notice', [HomeController::class, 'notice'])->name('notice');
 
 
 
-Route::resource('post-categories', CategoryPostController::class);
+// Route::resource('post-categories', CategoryPostController::class);

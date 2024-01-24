@@ -16,7 +16,8 @@
                     <div class="single-blog mt-30">
                         <div class="blog-image">
                             <a href="{{ route('blog-details',$blog['slug'])}}">
-                                <img src="{{ $blog['image']}}" width="370" height="250" alt="blog">
+                                <img src="{{ $blog['image']}}" width="370" height="250" alt="blog"
+                                    onerror="onErrorImage(event)">
                             </a>
                         </div>
                         <div class="blog-content">

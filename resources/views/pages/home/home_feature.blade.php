@@ -14,7 +14,7 @@
                 <div class="col-lg-11">
                     <div class="features-image">
                         <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/features.webp"
-                            width="1061" height="387" alt="features">
+                            width="1061" height="387" onerror="onErrorImage(event)" alt="features">
                     </div>
                 </div>
             </div>

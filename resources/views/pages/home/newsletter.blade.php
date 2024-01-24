@@ -7,7 +7,7 @@
                     <div class="section-title-2 mt-25">
                         <h2 class="title">Subscribe our Newsletter</h2>
                         <span class="line"></span>
-                        <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need some</p>
+                        <p>ទទួលបាននូវព័ត៌មានថ្មីពីការបណ្តុះបណ្តាលរបស់យើងរាល់គ្នា។</p>
                     </div>
                 </div>
                 <div class="col-lg-7">

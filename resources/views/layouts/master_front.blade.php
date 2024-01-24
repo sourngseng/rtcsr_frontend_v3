@@ -127,6 +127,13 @@
             padding: 0 20px !important;
         }
     </style>
+    <script>
+        var baseUrl = "{{ URL::to('/') }}";
+        const onErrorImage = (e) => {
+            // e.target.src = "{{ asset('/images/no_image_available.jpg') }}";
+            e.target.src = "{{ asset('/images/rtcsr-logo.png') }}";
+        };
+    </script>
     @stack('styles')
 </head>
 

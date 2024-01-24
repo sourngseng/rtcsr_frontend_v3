@@ -20,15 +20,15 @@
                             <div class="testimonials-image">
                                 <div class="single-testimonial-image">
                                     <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/testimonials-1.webp"
-                                        width="313" height="579" alt="testimonials">
+                                        width="313" height="579" alt="testimonials" onerror="onErrorImage(event)">
                                 </div>
                                 <div class="single-testimonial-image">
                                     <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/testimonials-2.webp"
-                                        width="313" height="579" alt="testimonials">
+                                        width="313" height="579" alt="testimonials" onerror="onErrorImage(event)">
                                 </div>
                                 <div class="single-testimonial-image">
                                     <img src="https://template.hasthemes.com/edumate-v1/edumate/assets/images/testimonials-3.webp"
-                                        width="313" height="579" alt="testimonials">
+                                        width="313" height="579" alt="testimonials" onerror="onErrorImage(event)">
                                 </div>
                             </div>
                         </div>

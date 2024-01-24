@@ -1,5 +1,5 @@
 <section class="slider-area slider-active">
-
+    {{-- @dd($slides['data']) --}}
     @foreach($slides['data'] as $slider )
     <div class="single-slider d-flex align-items-center bg_cover "
         style="background-image: url({{$slider['image']}});background-size: cover;">
