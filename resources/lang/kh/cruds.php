@@ -540,7 +540,7 @@ return [
         'product_id_helper'  => ' ',
         'qty'            => 'Qty',
         'qty_helper'     => ' ',
-        'duration'         => 'Duration',
+        'duration'         => 'រយះពេល',
         'duration_helper'  => ' ',
         'user_id'         => 'User',
         'user_id_helper'  => ' ',

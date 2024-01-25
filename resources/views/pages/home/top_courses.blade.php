@@ -10,12 +10,15 @@
         </div>
         <div class="courses-wrapper">
             <div class="row">
+
+                @foreach($top_courses['data'] as $row )
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
                         <a href="#" class="category">#Science</a>
-                        <h4 class="courses-title"><a href="#">វិទ្យាសាស្រ្តកុំព្យូទ័រ</a></h4>
+                        <h4 class="courses-title"><a href="#">{{$row['name'] }}</a></h4>
                         <div class="duration-fee">
-                            <p class="duration">រយះពេល: <span> ៤ ឆ្នាំ</span></p>
+                            <p class="duration">{{ __('cruds.ht.fields.duration') }}: <span> {{ $row['duration'] }} {{
+                                    __('global.year') }}</span></p>
                             {{-- <p class="fee">Fee: <span> $540</span></p> --}}
                         </div>
                         <div class="rating">
@@ -34,13 +37,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 courses-col">
+                @endforeach
+
+                {{-- <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.4s">
                         <a href="#" class="category">#Finacne</a>
                         <h4 class="courses-title"><a href="#">គណនេយ្យ និងហិរញ្ញវត្ថុ</a></h4>
                         <div class="duration-fee">
                             <p class="duration">រយះពេល: <span> ៤ ឆ្នាំ</span></p>
-                            {{-- <p class="fee">Fee: <span> $540</span></p> --}}
+                            <p class="fee">Fee: <span> $540</span></p>
                         </div>
                         <div class="rating">
                             <span>Rating: </span>
@@ -65,7 +70,7 @@
                         </h4>
                         <div class="duration-fee">
                             <p class="duration">រយះពេល: <span> ៥ ឆ្នាំ</span></p>
-                            {{-- <p class="fee">Fee: <span> $540</span></p> --}}
+                            <p class="fee">Fee: <span> $540</span></p>
                         </div>
                         <div class="rating">
                             <span>Rating: </span>
@@ -107,7 +112,7 @@
                             <a class="more" href="#">អានបន្ថែម <i class="fal fa-chevron-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
 
             </div>
