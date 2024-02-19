@@ -23,23 +23,39 @@
                                 <li>
                                     <a href="#">ការិយាល័យ</a>
                                     <ul class="nav-dropdown nav-submenu">
-                                        <li><a href="#">រដ្ឋបាល និងបុគ្គលិក</a></li>
-                                        <li><a href="#">ការិយាល័យហិរញ្ញវត្ថុ</a></li>
-                                        <li><a href="#">ការិយាល័យអប់រំ</a></li>
-                                        <li><a href="#">ការិយាល័យស្រាវជ្រាវមុខរបរ</a></li>
-                                        <li><a href="#">ការិយាល័យធានាគុណភាព</a></li>
+                                        <li><a href="{{ route('office_dept','education-office') }}">រដ្ឋបាល
+                                                និងបុគ្គលិក</a></li>
+                                        <li><a
+                                                href="{{ route('office_dept','education-office') }}">ការិយាល័យហិរញ្ញវត្ថុ</a>
+                                        </li>
+                                        <li><a href="{{ route('office_dept','education-office') }}">ការិយាល័យអប់រំ</a>
+                                        </li>
+                                        <li><a
+                                                href="{{ route('office_dept','education-office') }}">ការិយាល័យស្រាវជ្រាវមុខរបរ</a>
+                                        </li>
+                                        <li><a
+                                                href="{{ route('office_dept','education-office') }}">ការិយាល័យធានាគុណភាព</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#">ដេប៉ាតឺម៉ង់</a>
                                     <ul class="nav-dropdown nav-submenu">
-                                        <li><a href="#">វិទ្យាសាស្រ្តកុំព្យូទ័រ</a></li>
-                                        <li><a href="#">អេឡិចត្រូនិច</a></li>
-                                        <li><a href="#">សំណង់ស៊ីវិល</a></li>
-                                        <li><a href="#">បរិក្ខាត្រជាក់ និងយន្តសាស្រ្ត</a></li>
-                                        <li><a href="#">ផលិតកម្ម និងសេវាកម្ម</a></li>
-                                        <li><a href="#">គ្រប់គ្រងពាណិជ្ជកម្ម</a></li>
-                                        <li><a href="#">ភាសាបរទេស</a></li>
+                                        <li><a
+                                                href="{{ route('office_dept','computer-science') }}">វិទ្យាសាស្រ្តកុំព្យូទ័រ</a>
+                                        </li>
+                                        <li><a href="{{ route('office_dept','electronics') }}">អេឡិចត្រូនិច</a>
+                                        </li>
+                                        <li><a href="{{ route('office_dept','civil-construction') }}">សំណង់ស៊ីវិល</a>
+                                        </li>
+                                        <li><a href="{{ route('office_dept','air-conditioning-and-mechanics') }}">បរិក្ខាត្រជាក់
+                                                និងយន្តសាស្រ្ត</a></li>
+                                        <li><a href="{{ route('office_dept','education-office') }}">ផលិតកម្ម
+                                                និងសេវាកម្ម</a></li>
+                                        <li><a
+                                                href="{{ route('office_dept','education-office') }}">គ្រប់គ្រងពាណិជ្ជកម្ម</a>
+                                        </li>
+                                        <li><a href="{{ route('office_dept','education-office') }}">ភាសាបរទេស</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="{{ route('about') }}">ប្រវត្តវិទ្យាស្ថាន</a></li>

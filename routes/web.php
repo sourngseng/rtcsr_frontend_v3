@@ -23,12 +23,15 @@ Route::get('/lang/{locale}', function ($locale) {
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('page/about', [HomeController::class, 'about'])->name('about');
+Route::get('page/{office}', [HomeController::class, 'office_dept'])->name('office_dept');
+
+
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/blog-details/{slug}', [HomeController::class, 'blog_details'])->name('blog-details');
 
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/courses', [HomeController::class, 'courses'])->name('courses');
-Route::get('/courses-detail', [HomeController::class, 'courses_detail'])->name('courses-detail');
+Route::get('/courses-detail/{slug}', [HomeController::class, 'courses_detail'])->name('courses-detail');
 Route::get('/event', [HomeController::class, 'event'])->name('event');
 Route::get('page/teacher', [HomeController::class, 'teacher'])->name('teacher');
 Route::get('page/gallery', [HomeController::class, 'gallery'])->name('gallery');

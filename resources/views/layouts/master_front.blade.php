@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="{{asset('frontend')}}/images/rtcsr-logo.png" type="image/webp">
+    <link rel="shortcut icon" href="{{asset('images')}}/rtcsr-logo.png" type="image/webp">
     @include('layouts.partials.styles')
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -125,6 +125,17 @@
 
         .newsletter-form input {
             padding: 0 20px !important;
+        }
+
+        .two-line-ellipsis {
+            overflow: hidden;
+            width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            /* padding-top: 5px; */
+            padding-bottom: 5px;
+            line-height: 22px;
+            -webkit-box-orient: vertical;
         }
     </style>
     <script>

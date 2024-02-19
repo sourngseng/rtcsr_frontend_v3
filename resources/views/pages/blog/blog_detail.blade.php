@@ -1,6 +1,6 @@
 @extends('layouts.master_front')
 
-@section('title', 'Blog')
+@section('title', $blog_detail['data'][0]['title'] )
 
 @section('content')
 
@@ -10,7 +10,8 @@
     <div class="page-banner-bg bg_cover" style="background-image: url({{ asset('images/page_banner.webp') }});">
         <div class="container">
             <div class="banner-content text-center">
-                <h2 class="title">Blog</h2>
+                {{-- <h2 class="title">{{ $blog_detail['data'][0]['title'] }}</h2> --}}
+                <h2 class="title">{{ __('langs.menus.blogs') }}</h2>
             </div>
         </div>
     </div>
@@ -182,47 +183,19 @@
                 <div class="blog-sidebar right-sidebar pt-20">
                     <div class="blog-sidebar-category mt-30">
                         <div class="sidebar-title">
-                            <h4 class="title">Categories</h4>
+                            <h4 class="title">{{ __('Categories') }}</h4>
                         </div>
                         <ul class="category-items">
+                            @foreach ($blog_categories['blog_categories'] as $item)
                             <li>
                                 <div class="form-radio">
-                                    <input type="radio" name="categoryRadio" id="categoryRadio1">
-                                    <label for="categoryRadio1"> <span></span> Science <strong>(25)</strong></label>
+                                    <input type="radio" name="categoryRadio" id="bg_category_{{ $item['id'] }}">
+                                    <label for="bg_category_{{ $item['id'] }}"> <span></span> {{ $item['title'] }}
+                                        {{-- <strong>(25)</strong> --}}
+                                    </label>
                                 </div>
                             </li>
-                            <li>
-                                <div class="form-radio">
-                                    <input type="radio" name="categoryRadio" id="categoryRadio2">
-                                    <label for="categoryRadio2"> <span></span> Marketing <strong>(18)</strong></label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-radio">
-                                    <input type="radio" name="categoryRadio" id="categoryRadio3">
-                                    <label for="categoryRadio3"> <span></span> Design <strong>(10)</strong></label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-radio">
-                                    <input type="radio" name="categoryRadio" id="categoryRadio4">
-                                    <label for="categoryRadio4"> <span></span> Social Marketing
-                                        <strong>(05)</strong></label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-radio">
-                                    <input type="radio" name="categoryRadio" id="categoryRadio5">
-                                    <label for="categoryRadio5"> <span></span> Fine Arts <strong>(12)</strong></label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="form-radio">
-                                    <input type="radio" name="categoryRadio" id="categoryRadio6">
-                                    <label for="categoryRadio6"> <span></span> Law <strong>(05)</strong></label>
-                                </div>
-                            </li>
-                        </ul>
+                            @endforeach
                     </div>
 
                     <div class="blog-sidebar-post mt-30">
@@ -230,64 +203,35 @@
                             <h4 class="title">Recent Post</h4>
                         </div>
                         <ul class="post-items">
+                            @foreach ($blogs['data'] as $item)
                             <li>
                                 <div class="single-post">
                                     <div class="post-thumb">
-                                        <a href="blog-details.html"><img src="assets/images/post-1.webp" alt=""></a>
+                                        <a href="{{ route('blog-details', $item['slug']) }}">
+                                            <img style="width: 64px !important;" src="{{ $item['image'] }}" alt="">
+                                        </a>
                                     </div>
                                     <div class="post-content">
-                                        <h4 class="post-title"><a href="blog-details.html">Guest Interview will Occur in
-                                                English</a></h4>
-                                        <a href="#" class="more">Read more <i class="fal fa-chevron-right"></i></a>
+                                        <h4 class="post-title">
+                                            <a class="two-line-ellipsis"
+                                                href="{{ route('blog-details', $item['slug']) }}">
+                                                {{ $item['title'] }}
+                                            </a>
+                                        </h4>
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <div class="single-post">
-                                    <div class="post-thumb">
-                                        <a href="blog-details.html"><img src="assets/images/post-2.webp" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <h4 class="post-title"><a href="blog-details.html">Online Courses are available
-                                                now</a></h4>
-                                        <a href="#" class="more">Read more <i class="fal fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="single-post">
-                                    <div class="post-thumb">
-                                        <a href="blog-details.html"><img src="assets/images/post-3.webp" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <h4 class="post-title"><a href="blog-details.html">Workshop on English native
-                                                Language</a></h4>
-                                        <a href="#" class="more">Read more <i class="fal fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="single-post">
-                                    <div class="post-thumb">
-                                        <a href="blog-details.html"><img src="assets/images/post-4.webp" alt=""></a>
-                                    </div>
-                                    <div class="post-content">
-                                        <h4 class="post-title"><a href="blog-details.html">How to find resources for
-                                                Laravel Language </a></h4>
-                                        <a href="#" class="more">Read more <i class="fal fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
 
                     <div class="blog-sidebar-banner mt-30">
                         <a href="#">
-                            <img src="assets/images/product/banner.webp" width="326" height="374" alt="Banner">
+                            <img src="{{ asset('images') }}/ads_001.jpg" width="326" height="374" alt="Banner">
                         </a>
                     </div>
 
-                    <div class="blog-sidebar-tags mt-30">
+                    {{-- <div class="blog-sidebar-tags mt-30">
                         <div class="sidebar-title">
                             <h4 class="title">Tags</h4>
                         </div>
@@ -305,7 +249,7 @@
                             <li><a href="#">Library</a></li>
                             <li><a href="#">Shopping</a></li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

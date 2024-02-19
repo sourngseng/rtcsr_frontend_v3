@@ -22,8 +22,17 @@ class HomeController extends Controller
 //         dd($data['slides']);
         return view('pages.home.index',$data);
     }
+    public function office_dept($slug){
+        $this->domain =env('APP_URL_API');
+        $data['offices']=Http::get($this->domain .'/offices')->json();
+        $data['blog_categories']=Http::get($this->domain .'/blog-categories')->json();
+        $data['blogs']=Http::get($this->domain .'/blogs')->json();
+        // dd($data['blog_categories']);
+        $data['office_detail']=Http::get($this->domain .'/office_detail/'.$slug)->json();
+        // dd($data['blogs']);
+        return view('pages.home.office_dept',$data);
+    }
     public function about()
-
     {
         $response=Http::get('https://apps.rpitssr.edu.kh/api/front-teachers');
         $data['teachers']=$response->json();
@@ -44,6 +53,10 @@ class HomeController extends Controller
         $data['slides']=Http::get($this->domain .'/sliders')->json();
         $data['blog_detail']=Http::get($this->domain .'/blog-details/'.$slug)->json();
         // dd($data['blog_detail']);
+
+        $data['blog_categories']=Http::get($this->domain .'/blog-categories')->json();
+        $data['blogs']=Http::get($this->domain .'/blogs')->json();
+        
         return view('pages.blog.blog_detail',$data);
     }
     public function contact()
@@ -55,8 +68,9 @@ class HomeController extends Controller
     {
         $this->domain =env('APP_URL_API');
         // $response=Http::get($this->domain .'/sliders');
-        $courses=Http::get($this->domain .'/courses');
-        $data['courses']=$courses->json();        
+        // $courses=Http::get($this->domain .'/courses');
+        // $data['courses']=$courses->json();
+        $data['page_courses']=Http::get($this->domain .'/page-courses')->json();       
         // return view('pages.course.index_courses');
         return view('pages.course.our-courses-list',$data);
     }
